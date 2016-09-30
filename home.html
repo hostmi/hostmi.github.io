@@ -1,0 +1,178 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HostMe</title>
+	<link rel="stylesheet" href="static/css/HostMe.min.css" />
+	<link rel="stylesheet" href="static/css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="static/css/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="screen" />
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/jquery.mobile-1.4.5.min.js"></script>
+	<script defer src="static/js/jquery.flexslider.js"></script>
+	<script type="text/javascript"> 
+	// Can also be used with $(document).ready()
+	$(window).load(function() {
+  		$('.flexslider').flexslider({
+    			directionNav: false,
+			controlNav: true,   
+    			slideshow: false
+  		});
+	});
+		</script>
+</head>
+
+<body>
+	<div data-role="page" data-theme="a" id="home" data-close-btn="none"> 
+		<div data-role="header" data-position="inline" data-close-btn="none">
+			<h1 style="margin-bottom: 45px;"><a href="#hostme" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div data-role="popup" class="ui-content" id="hostme">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="text-align: center;">
+					<a href="#make" data-transition="slidedown" style="width: 66px; text-decoration: none;">HostMe</a> 
+				</div>	
+			</div>
+			<p style="text-align: center; font-size: 11px;">Sell anything</p>
+			<p style="text-align: center; font-size: 11px;">toguether with your partners.</p>
+			<h1 style="margin-top: 45px;"><a href="partners.html" target="_self" style="width: 66px; position: inline; text-align: center; text-decoration: none;">Partners</a></h1>
+		
+		</div>	
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!-- end of homepage -->	
+	<div data-role="page" data-dialog="true" data-theme="a" id="make" data-close-btn="none"> 
+		<div data-role="header" data-position="inline" data-close-btn="none" style="text-align: center;">
+			<h1><a href="#hostme2" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1>
+			<div data-role="popup" class="ui-content" id="hostme2">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div class="ui-content" style="text-align: center;">
+					<a href="#make" data-transition="slidedown" style="width: 66px; text-decoration: none;">HostMe</a> 
+				</div>	
+			</div>		
+			<div class="ui-content" style="position: inline; text-align: center;">					
+				<form style="width: 100%;">
+					<div class="ui-field-contain">	 					
+						<input id="mm-upload-file" type="file" name="memeFile" style="font-size: 10px;">
+					</div>					
+					<label for="1stline" style="margin-top:20px; font-size: 10px;">Name of the product</label>
+					<input name="1stline" id="1stline" value="" placeholder="Goat milk" type="text" style="max-width: 300px;">
+					<label for="2ndline" style="font-size: 10px;">Price of the product</label>
+					<input name="2ndline" id="2ndline" value="" placeholder="0,90£" type="text">
+					<label for="3rdline" style="font-size: 10px;">Contact for meeting</label>
+					<input name="3rdline" id="3rdline" value="" placeholder="11rucch@gmail.com" type="text">
+					
+					
+					<div class="ui-field-container ui-grid-a">
+						<div class="ui-content ui-block-a">
+							<label for="select-native-1" style="font-size: 10px;">Chose a Color</label>
+							<select name="select-native-1" id="select-native-1" class="ui-btn" data-role="none">
+							<option value="1">Yellow</option>
+        						<option value="2" selected="selected">Green</option>
+       			 				<option value="3">Red</option>
+       			 				<option value="4">Blue</option>
+    							</select>
+						</div>				
+						<div class="ui-content ui-block-b">
+							<label for="select-native-1" style="font-size: 10px;">Choose a Font</label>
+							<select name="select-native-1" id="select-native-1" class="ui-btn" data-role="none">
+							<option value="1">Arrial</option>
+        						<option value="2" selected="selected">Sans German</option>
+       		 					<option value="3">Elvetic</option>
+       		 					<option value="4">Romans</option>
+    							</select>
+						</div>
+					</div>
+				</form>			
+			</div>
+			<div data-role="main" class="ui-content" style="text-align: center;">				
+				<img src="static/img/milk.jpg" style="max-width: 100%;">															
+			</div>
+			<div class="ui-content" style="position: inline; text-align: center;">					
+ 				<form style="width: 100%;">	
+					<div class="ui-field-contain">
+						<p>Utilize to be find:</p>
+						<label for="2ndline" style="font-size: 10px;">Give a City</label>
+						<input name="2ndline" id="2ndline" value="" placeholder="Barcelona" type="text">
+						<label for="3rdline" style="font-size: 10px;">Give a Tema</label>
+						<input name="3rdline" id="3rdline" value="" placeholder="Gastronomy" type="text">
+					</div>
+					<p>Participate in our "Adds with Choice":</p>					
+					<div class="ui-field-contain">
+						<label for="select-native-1" style="font-size: 10px;">Give a Category (Opitional)</label>
+						<select name="select-native-1" id="select-native-1" class="ui-btn" data-role="none">
+							<option value="1">Accessories</option>
+        						<option value="2" selected="selected">Gastronomy</option>
+       		 					<option value="3">Musical Instruments</option>
+       		 					<option value="4">Electronic</option>
+    						</select>
+					</div>
+				</form>	
+				<a href="#partnersnotice" target="_parent" class="ui-btn" style="text-align: center; margin-top: 45px;">I'm Done</a>
+
+			</div>
+			
+		</div><!--/header-->
+
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/make dialog ends-->	
+	
+	<div data-role="page" data-dialog="true" data-theme="a" data-close-btn="none" id="partnersnotice">
+		<div data-role="header" data-position="inline" data-close-btn="none" style="text-align: center;">
+			<div class="ui-content" style="text-align: center; margin-top: 30px;">				
+				<div class="ui-content" style="text-align: center; margin: 0; border: none; padding: 0;">
+					<a href="#" class="ui-btn" style="width: 100px; pointer-events: none;">Barcelona</a><a href="#" class="ui-btn" style="width: 100; margin-left: 2px; pointer-events: none;">Gastronomy</a>
+					<img src="static/img/cheese.jpg" style="max-height: 150px;">	
+					<img src="static/img/cheese.gif" style="max-height: 150px;">
+				</div>
+				<p>Whants to make a partnership with you!</p>			
+			</div>			
+			<div class="ui-content">
+				<a href="hostme.html" target="_self" data-role="button">Make it</a>
+			</div>
+					
+			<div class="ui-content" style="text-align: center; margin-bottom: 20px;">
+				<a href="hostme.html" target="_self" data-role="button">No Thanks</a>
+			</div>		
+		</div><!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/partnership dialog ends-->	
+
+</body>
+</html>

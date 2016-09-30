@@ -1,0 +1,403 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HostMe</title>
+	<link rel="stylesheet" href="static/css/HostMe.min.css" />
+	<link rel="stylesheet" href="static/css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="static/css/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="screen" />
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/jquery.mobile-1.4.5.min.js"></script>
+	<script defer src="static/js/jquery.flexslider.js"></script>
+	<script type="text/javascript"> 
+	// Can also be used with $(document).ready()
+	$(window).load(function() {
+  		$('.flexslider').flexslider({
+    			directionNav: false,
+			controlNav: true,   
+    			slideshow: false
+  		});
+	});
+	</script>
+</head>
+<body>
+<div data-role="page" data-theme="a" id="">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostme" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostme" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#city" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="city" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#tema" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="tema" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#construction">Construction</a></li>
+						<li><a href="#gastronomy">Gastronomy</a></li>						
+					</ul>
+				</div>
+			
+			</div>
+				
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/partners-->
+
+<div data-role="page" data-theme="a" id="barcelona">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostmebarcelona" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostmebarcelona" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#citybarcelona" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="citybarcelona" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#temabarcelona" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="temabarcelona" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#construction">Construction</a></li>
+						<li><a href="#gastronomy">Gastronomy</a></li>
+						
+					</ul>
+				</div>
+			
+			</div>
+			<div role="main" class="ui-content ui-grid-a" style="display: block; text-align: center;">
+				<a href="#milk"><img src="static/img/milk.jpg" style="max-width: 50%; max-height: 50%;"></a>
+				<a href="#cheese"><img src="static/img/cheese.jpg" style="max-width: 50%; max-height: 50%; margin-top: 2px;"></a>
+				<a href="#stone"><img src="static/img/stone.jpg" style="max-width: 50%; max-height: 50%; margin-top: 2px;"></a>
+
+			</div>
+								
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/barcelona-->
+
+<div data-role="page" data-theme="a" id="construction">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostmeconstruction" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostmeconstruction" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#cityconstruction" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="cityconstruction" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#temaconstruction" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="temaconstruction" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#construction">Construction</a></li>
+						<li><a href="#gastronomy">Gastronomy</a></li>
+									
+					</ul>
+				</div>
+			
+			</div>
+			<div role="main" class="ui-content ui-grid-a" style="display: block; text-align: center;">
+				<a href="#stone"><img src="static/img/stone.jpg" style="max-width: 50%; max-height: 50%; margin-top: 2px;"></a>
+
+			</div>
+					
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/construction-->
+
+<div data-role="page" data-theme="a" id="gastronomy">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostmegastronomy" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostmegastronomy" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#citygastronomy" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="citygastronomy" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#temagastronomy" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="temagastronomy" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#construction">Construction</a></li>
+						<li><a href="#gastronomy">Gastronomy</a></li>
+						
+					</ul>
+				</div>
+			
+			</div>
+			<div role="main" class="ui-content ui-grid-a" style="display: block; text-align: center;">
+				<a href="#milk"><img src="static/img/milk.jpg" style="max-width: 50%; max-height: 50%;"></a>
+
+				<a href="#cheese"><img src="static/img/cheese.jpg" style="max-width: 50%; max-height: 50%; margin-top: 2px;"></a>
+			</div>
+								
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/gastronomy-->
+	<div data-role="page" data-theme="a" id="stone">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostmestone" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostmestone" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#citystone" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="citystone" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#temastone" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="temastone" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#construction">Construction</a></li>
+						<li><a href="#gastronomy">Gastronomy</a></li>
+						
+					</ul>
+				</div>
+			
+			</div>
+			
+			<div class="ui-content" style="text-align: center; margin-top: 30px;">				
+				<div class="ui-content ui-grid-a" style="text-align: center; margin: auto; border: none; padding: 0; max-width:300px; max-heigth: 350px;">
+					<a href="#" class="ui-btn" style="width: 100px; pointer-events: none;">Barcelona</a><a href="#" class="ui-btn" style="width: 100; margin-left: 2px; pointer-events: none;">Construction</a>
+					<img src="static/img/stone.jpg" style="max-height: 150px;">	
+					<img src="static/img/stone.gif" style="max-height: 150px;">
+				</div>
+
+			</div>	
+			<div style="text-align: center;">		
+				<a href="#inv2" data-role="button" data-transition="pop" data-rel="popup" style="width: 66px;">Invite</a><!--animated by javascript-->
+				<div class="ui-content" id="inv2" data-role="popup">
+					<p>If a Host invite another Host for partner, He can accept or cancel the partnership</p>
+				</div>	
+			</div>
+			<h1><a href="#" data-rel="back" style="width: 66px; position: inline; text-align: center; text-decoration: none;">Back</a></h1>		
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/stone-->
+	<div data-role="page" data-theme="a" id="cheese">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostmecheese" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostmecheese" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#citycheese" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="citycheese" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#temacheese" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="temacheese" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#">Construction</a></li>
+						<li><a href="#">Gastronomy</a></li>
+												
+					</ul>
+				</div>
+			
+			</div>
+			
+			<div class="ui-content" style="text-align: center; margin-top: 30px;">				
+				<div class="ui-content ui-grid-a" style="text-align: center; margin: auto; border: none; padding: 0; max-width:300px; max-heigth: 350px;">
+					<a href="#" class="ui-btn" style="width: 100px; pointer-events: none;">Barcelona</a><a href="#" class="ui-btn" style="width: 100; margin-left: 2px; pointer-events: none;">Gastronomy</a>
+					<img src="static/img/cheese.jpg" style="max-height: 150px;">	
+					<img src="static/img/cheese.gif" style="max-height: 150px;">
+				</div>
+
+			</div>	
+			<div style="text-align: center;">		
+				<a href="#inv1" data-role="button" data-transition="pop" data-rel="popup" style="width: 66px;">Invite</a><!--animated by javascript-->
+				<div class="ui-content" id="inv1" data-role="popup">
+					<p>If a Host invite another Host for partner, He can accept or cancel the partnership</p>
+				</div>	
+			</div>
+			<h1><a href="#" data-rel="back" style="width: 66px; position: inline; text-align: center; text-decoration: none;">Back</a></h1>	
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/cheese-->
+	<div data-role="page" data-theme="a" id="milk">
+		<div data-role="header" data-position="inline">
+			<h1><a href="#hostmemilk" data-transition="pop" data-rel="popup" style="text-decoration: none;">HostMe</a></h1> 
+			<div class="ui-content" id="hostmemilk" data-role="popup">
+				<input type="text" value="Loggin">
+				<input type="password" value="Password">
+				<div style="margin-left: 50px;">
+					<a href="home.html" target="_self" data-role="button" style="width: 66px;">Host</a>
+				</div>	
+			</div>
+			
+
+			<div style="text-align: center;">
+				<a href="#citymilk" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">Where?</a>		
+				<div id="citymilk" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#barcelona">Barcelona</a></li>
+					</ul>
+				</div>
+				<a href="#temamilk" data-transition="pop" data-rel="popup" data-role="button" style="width: 66px;">What?</a>
+				<div id="temamilk" data-role="popup">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+						<li><a href="#construction">Construction</a></li>
+						<li><a href="#gastronomy">Gastronomy</a></li>
+						
+					</ul>
+				</div>
+			
+			</div>
+			
+			<div class="ui-content" style="text-align: center; margin-top: 30px;">				
+				<div class="ui-content ui-grid-a" style="text-align: center; margin: auto; border: none; padding: 0; max-width:300px; max-heigth: 350px;">
+					<a href="#" class="ui-btn" style="width: 100px; pointer-events: none;">Barcelona</a><a href="#" class="ui-btn" style="width: 100; margin-left: 2px; pointer-events: none;">Gastronomy</a>
+					<img src="static/img/milk.jpg" style="max-height: 150px;">	
+					<img src="static/img/milk.gif" style="max-height: 150px;">
+				</div>
+
+			</div>	
+			<div style="text-align: center;">		
+				<a href="#inv3" data-role="button" data-transition="pop" data-rel="popup" style="width: 66px;">Invite</a><!--animated by javascript-->
+				<div class="ui-content" id="inv3" data-role="popup">
+					<p>Please invite different partners</p>
+				</div>	
+			</div>
+			<h1><a href="#" data-rel="back" style="width: 66px; position: inline; text-align: center; text-decoration: none;">Back</a></h1>	
+		</div> <!--/header-->
+		<div data-role="main" class="ui-content flexslider" style="display: table; margin-top: 20px; margin-left: auto; margin-right: auto; margin-botton: auto; text-align: center;">
+ 			<ul class="slides">
+    				<li>
+      					<img src="static/img/instruments.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+    				<li>
+      					<img src="static/img/accessories.gif" style="max-width: 300px; max-heigth: 150px;"/>
+    				</li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="inline" style="margin-top: 44px;">
+			<p style="text-align: center;">Sell pratically anything with the cooperation of your partners.</p>
+		</div>
+	</div><!--/milk-->
+</body>
+</html>
